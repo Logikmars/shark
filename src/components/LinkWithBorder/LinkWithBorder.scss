@@ -1,4 +1,4 @@
-.LinkWithBorder{
+.LinkWithBorder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,38 +12,47 @@
     // font-family: 'Bigger';
     // color: white;
     // background-color: red;
-    &:hover{
+    will-change: scale; //!!!важно
+
+    &:hover {
         scale: 1.1;
     }
-    &_decor_top{
+
+    &_decor_top {
         width: 100% !important;
         justify-content: space-between !important;
-        &_right{
-            img{
+
+        &_right {
+            img {
                 rotate: 90deg;
             }
         }
     }
-    &_content{
+
+    &_content {
         padding: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        &_text{
+
+        &_text {
             padding: 9px 18px;
         }
     }
-    &_decor_bottom{
+
+    &_decor_bottom {
         width: 100% !important;
         justify-content: space-between !important;
-        &_left{
-            img{
+
+        &_left {
+            img {
                 rotate: -90deg;
             }
         }
-        &_right{
-            img{
+
+        &_right {
+            img {
                 rotate: 180deg;
             }
         }

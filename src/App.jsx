@@ -3,10 +3,10 @@ import HeroSection from "./components/HeroSection/HeroSection"
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Header />
       <HeroSection />
-    </>
+    </div>
   )
 }
 
