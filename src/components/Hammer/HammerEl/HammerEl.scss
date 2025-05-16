@@ -1,0 +1,13 @@
+.HammerEl{
+    width: calc(100% / 4 - 20px);
+    font-family: 'Bigger';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 42px;
+    img{
+        width: 100%;
+    }
+}

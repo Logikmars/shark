@@ -1,18 +1,13 @@
-// @font-face {
-//     font-family: "Poppins";
-//     src: url('/fonts/Poppins-Regular.ttf');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
 @font-face {
     font-family: 'Bigger';
-    src: url('/fonts/BiggerDisplay.otf');
+    src: url('/fonts/biggerdisplay.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fixel';
-    src: url('/fonst/FixelText-SemiBold.otf');
+    src: url('/fonts/FixelText-SemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
 }
