@@ -1,0 +1,26 @@
+.HowToBuy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-bottom: 150px !important;
+    padding-top: 100px !important;
+    &_decor{
+        width: 100% !important;
+        justify-content: end !important;
+        &_text{
+            justify-content: end !important;
+            left: -10%;
+            bottom: 70px;
+            z-index: 9999999999;
+            rotate: -5deg;
+            img{
+                width: 300px;
+                @media(max-width: 400px){
+                    width: 220px;
+                }
+            }
+        }
+    }
+}

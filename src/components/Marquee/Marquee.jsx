@@ -1,7 +1,7 @@
 import './Marquee.scss';
-export default () => {
+export default ({ text, decor }) => {
 
-    const words = Array(30).fill('$jaws').join('\u00A0');
+    const words = Array(30).fill(`${text}`).join('\u00A0');
 
     return (
         <div className='Marquee'>
@@ -15,6 +15,14 @@ export default () => {
             <div className="Marquee_inner2">
                 <span>{words}</span>
             </div>
+            {
+                decor && 
+                <div className='Marquee_decor2 free_img'>
+                    <div className='Marquee_decor2_fish free_img'>
+                        <img src="/img/fishSup.webp" alt="" />
+                    </div>
+                </div>
+            }
         </div>
     )
 }

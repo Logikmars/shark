@@ -1,0 +1,87 @@
+.HowToBuyEl{
+    width: 100%;
+    &_decor{
+        width: 100% !important;
+        &_topStar{
+            width: 100% !important;
+            justify-content: space-between !important;
+            z-index: 99999;
+            &_topEl{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                &_vert{
+                    width: 100% !important;
+                    align-items: start !important;
+                    &_inner{
+                        min-width: 2px;
+                        min-height: 320px;
+                        background: radial-gradient(#FFFFFF 0%, #000000 100%);
+                        @media(max-width: 770px){
+                            min-height: 190px;
+                        }
+                        @media(max-width: 460px){
+                            min-height: 210px;
+                        }
+                        @media(max-width: 330px){
+                            min-height: 240px;
+                        }
+                        // @media(max-width: 570px){
+                        //     min-height: 340px;
+                        // }
+                        // @media(max-width: 450px){
+                        //     min-height: 370px;
+                        // }
+                        &_last{
+                            background: radial-gradient(#3A65FF 0%, #000000 100%);
+                        }
+                    }
+                }
+            }
+        }
+        &_topLine{
+            width: 100vw !important;
+            height: 2px !important;
+            background: radial-gradient(#FFFFFF 0%, #000000 100%);
+            &_last{
+                background: radial-gradient(#3A65FF 0%, #000000 100%);
+            }
+        }
+    }
+
+    &_content{
+        width: 100%;
+        padding: 110px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media(max-width: 770px){
+            padding: 50px;
+        }
+        &_step{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: rgba($color: #FFF, $alpha: .2);
+            font-size: 40px;
+            font-family: 'Bigger';
+        }
+        &_description{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: 40px;
+            font-family: 'Bigger';
+            @media(max-width: 1460px){
+                font-size: 30px;
+            }
+            @media(max-width: 760px){
+                font-size: 20px;
+            }
+        }
+    }
+}
