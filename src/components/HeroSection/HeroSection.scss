@@ -1,0 +1,99 @@
+.HeroSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px !important;
+    flex-wrap: wrap;
+    &_decor_topline{
+        width: 100vw !important;
+        height: 2px !important;
+        background: radial-gradient(#3A65FF, #000000);
+    }
+    // &_decor_leftline{
+    //     left: 9px;
+    //     width: 1px !important;
+    //     height: 540px !important;
+    //     background: radial-gradient(#3A65FF, #000000);
+    // }
+    &_content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 1400px;
+        flex-wrap: wrap;
+        &_decor_top{
+            width: 100% !important;
+            bottom: 1px;
+            justify-content: space-between !important;
+            z-index: 99;
+        }
+        &_decor_bottom{
+            width: 100% !important;
+            top: 1px;
+            justify-content: space-between !important; 
+            z-index: 99;
+        }
+        &_items{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 50px 150px;
+            flex-direction: column;
+            gap: 48px;
+            &_title{
+                width: 100%;
+                text-align: center;
+                font-size: 200px;
+                color: #2C5AFF;
+                font-weight: 900;
+            }
+            &_description{
+                width: 100%;
+                max-width: 590px;
+                text-align: center;
+                font-family: 'Fixel';
+                font-size: 16px;
+                line-height: 175%;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+            &_links{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 60px;
+                a{
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 24px;
+                    transition: color 300ms;
+                    &:hover{
+                        color: rgba($color: #FFFFFF, $alpha: .8);
+                    }
+                }
+            }
+        }
+    }
+    &_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1400px;
+        &_content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 45px;
+        }
+        &_decor{
+            width: 100% !important;
+            justify-content: space-between !important;
+            z-index: 99;
+            top: 1px;
+        }
+    }
+}

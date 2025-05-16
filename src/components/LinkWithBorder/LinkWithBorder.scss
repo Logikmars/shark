@@ -1,0 +1,51 @@
+.LinkWithBorder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: scale 300ms;
+    flex-wrap: wrap;
+    align-content: space-between;
+    // font-family: 'Bigger';
+    // color: white;
+    // background-color: red;
+    &:hover{
+        scale: 1.1;
+    }
+    &_decor_top{
+        width: 100% !important;
+        justify-content: space-between !important;
+        &_right{
+            img{
+                rotate: 90deg;
+            }
+        }
+    }
+    &_content{
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        &_text{
+            padding: 9px 18px;
+        }
+    }
+    &_decor_bottom{
+        width: 100% !important;
+        justify-content: space-between !important;
+        &_left{
+            img{
+                rotate: -90deg;
+            }
+        }
+        &_right{
+            img{
+                rotate: 180deg;
+            }
+        }
+    }
+}
