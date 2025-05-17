@@ -14,8 +14,8 @@
                     width: 100% !important;
                     align-items: start !important;
                     &_inner{
-                        min-width: 2px;
-                        min-height: 320px;
+                        min-width: 2px !important;
+                        min-height: 320px !important;
                         background: radial-gradient(#FFFFFF 0%, #000000 100%);
                         @media(max-width: 770px){
                             min-height: 190px;
