@@ -1,4 +1,4 @@
-.Hammer{
+.Hammer {
     width: 100%;
     display: flex;
     justify-content: start;
@@ -6,58 +6,76 @@
     padding-top: 100px;
     padding-bottom: 100px;
     flex-wrap: wrap;
+
     &_title_decor_lineTop,
-    &_title_decor_lineBot{
+    &_title_decor_lineBot {
         width: 70vw !important;
         height: 2px !important;
         background: radial-gradient(#3A65FF, #000000);
     }
-    &_title{
+
+    &_title {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        &_decor{
+
+        &_decor {
             width: 100vw !important;
             justify-content: start !important;
             rotate: -5deg;
             height: 2px;
         }
-        &_decorBot{
+
+        &_decorBot {
             width: 100vw !important;
             justify-content: end !important;
             rotate: -5deg;
-            &_img{
+
+            &_img {
                 left: -30%;
                 top: -20px;
-                img{
+
+                img {
                     width: 70px;
                     rotate: 15deg;
-                    @media(max-width: 400px){
+
+                    @media(max-width: 400px) {
                         width: 40px;
                     }
                 }
             }
         }
-        &_text{
+
+        &_text {
             padding: 50px 0px;
-            &_content{
+
+            &_content {
                 padding: 10px;
                 font-family: 'Bigger';
                 font-size: 200px;
                 color: #2C5AFF;
-                @media(max-width: 850px){
+
+                line-height: 128px;
+                padding-top: 40px;
+
+                @media(max-width: 850px) {
                     font-size: 120px;
+                    line-height: 68px;
+                    padding-top: 30px;
                 }
-                @media(max-width: 400px){
+
+                @media(max-width: 400px) {
                     font-size: 70px;
+                    line-height: 48px;
+                    padding-top: 20px;
                 }
             }
         }
     }
 
-    &_content{
+    &_content {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -65,15 +83,16 @@
         gap: 20px;
     }
 
-    &_description{
+    &_description {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px;
         gap: 20px;
+
         &_left,
-        &_right{
+        &_right {
             width: 50%;
             display: flex;
             justify-content: center;
@@ -87,13 +106,15 @@
     }
 
 
-    &_decor{
+    &_decor {
         width: 100vw !important;
-        &_blue{
+
+        &_blue {
             width: 100vw !important;
             justify-content: space-between !important;
             z-index: -1;
-            &_sec{
+
+            &_sec {
                 rotate: 180deg;
                 width: 200px;
             }

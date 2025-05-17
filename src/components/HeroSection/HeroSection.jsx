@@ -5,7 +5,7 @@ export default () => {
         <div className='HeroSection contaier'>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_decor_blurLeft free_img'>
-                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2'/>
+                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2' />
                 <img src="/img/decor.png" alt="" />
             </div>
             <div className='HeroSection_content'>
@@ -32,7 +32,7 @@ export default () => {
                     </div>
                     <div className='HeroSection_content_items_links'>
                         {
-                            ['About us', 'Products', 'Tokenimics', 'Roadmap', 'How to buy', 'Socials'].map((el, index) => (
+                            ['About us', 'Products', 'Tokenomics', 'Roadmap', 'How to buy', 'Socials'].map((el, index) => (
                                 <a href="" key={`HeroSection_content_items_links_${index}`}>{el}</a>
                             ))
                         }
@@ -43,14 +43,14 @@ export default () => {
                     <img src="/img/plus.svg" alt="" />
                 </div>
             </div>
-                <div className='HeroSection_decor_blurLeft HeroSection_decor_blurLeft_sec free_img'>
-                    <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 HeroSection_decor_blurLeft_sec_img2 '/>
-                    <img src="/img/decor.png" alt="" />
-                </div>
+            <div className='HeroSection_decor_blurLeft HeroSection_decor_blurLeft_sec free_img'>
+                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 HeroSection_decor_blurLeft_sec_img2 ' />
+                <img src="/img/decor.png" alt="" />
+            </div>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_btn'>
                 <div className='HeroSection_btn_content'>
-                    <LinkWithBorder title={'SCROLL DOWN'} img={'/img/scroll.svg'} />
+                    <LinkWithBorder title={'SCROLL DOWN'} addittional='SCROLL' img={'/img/scroll.svg'} />
                 </div>
                 <div className='HeroSection_btn_decor free_img'>
                     <img src="/img/plus.svg" alt="" />
@@ -59,8 +59,8 @@ export default () => {
             </div>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_decor_blurLeft free_img'>
-                    <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 '/>
-                    <img src="/img/decor.png" alt="" />
+                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 ' />
+                <img src="/img/decor.png" alt="" />
             </div>
         </div>
     )

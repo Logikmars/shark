@@ -13,10 +13,10 @@ function App() {
       <Header />
       <HeroSection />
       <AboutUs />
-      <Marquee text={'$jaws'}/>
+      <Marquee type={'ticker'} />
       <Hammer />
       <Tokenomics />
-      <Marquee text={'Buy'} decor/> 
+      <Marquee type={'HTB'} decor />
       {/* почему когда я ввожу How to buy, то бегущая строка растгивается по высоте, а не в ширину */}
       <HowToBuy />
       <Footer />

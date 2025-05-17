@@ -1,22 +1,30 @@
+import { useRef } from 'react';
 import './Marquee.scss';
-export default ({ text, decor }) => {
+export default ({ type, decor }) => {
 
-    const words = Array(30).fill(`${text}`).join('\u00A0');
 
     return (
         <div className='Marquee'>
-            <div className="Marquee_inner">
-                <span>{words}</span>
+            <div className={`Marquee_inner Marquee_inner_${type}`}>
+                {Array(20)
+                    .fill(0)
+                    .map((_, index) => {
+                        return <img src={`/img/${type}.svg`} alt="" />
+                    })}
             </div>
             <div className='Marquee_decor free_img'>
-                <img src="/img/decor.png" alt="" className='Marquee_decor_img2'/>
+                <img src="/img/decor.png" alt="" className='Marquee_decor_img2' />
                 <img src="/img/decor.png" alt="" />
             </div>
-            <div className="Marquee_inner2">
-                <span>{words}</span>
+            <div className={`Marquee_inner2 Marquee_inner2_${type}`}>
+                {Array(20)
+                    .fill(0)
+                    .map((_, index) => {
+                        return <img src={`/img/${type}_colored.svg`} alt="" />
+                    })}
             </div>
             {
-                decor && 
+                decor &&
                 <div className='Marquee_decor2 free_img'>
                     <div className='Marquee_decor2_fish free_img'>
                         <img src="/img/fishSup.webp" alt="" />

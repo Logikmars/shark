@@ -1,5 +1,5 @@
 import './LinkWithBorder.scss';
-export default ({ title, img }) => {
+export default ({ title, img, addittional = '' }) => {
     return (
         <div className='LinkWithBorder'>
             <div className='LinkWithBorder_decor_top free_img'>
@@ -12,7 +12,7 @@ export default ({ title, img }) => {
             </div>
             <div className={`LinkWithBorder_content ${title && 'LinkWithBorder_content_text'}`}>
                 {
-                    img && <img src={img} alt="" />
+                    img && <img src={img} className={`LinkWithBorder_content_${addittional}`} alt="" />
                 }
                 {
                     title && title

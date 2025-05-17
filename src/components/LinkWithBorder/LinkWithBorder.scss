@@ -6,16 +6,21 @@
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
-    transition: scale 300ms;
     flex-wrap: wrap;
     align-content: space-between;
     // font-family: 'Bigger';
     // color: white;
     // background-color: red;
+
+    transition: scale 300ms;
     will-change: scale; //!!!важно
 
     &:hover {
         scale: 1.1;
+
+        .LinkWithBorder_content {
+            scale: 0.95;
+        }
     }
 
     &_decor_top {
@@ -30,6 +35,8 @@
     }
 
     &_content {
+        transition: scale 300ms;
+        will-change: scale; //!!!важно
         padding: 18px;
         display: flex;
         justify-content: center;
@@ -40,6 +47,14 @@
 
         &_text {
             padding: 9px 18px;
+        }
+
+        &_logo {
+            width: 60px;
+        }
+
+        &_SCROLL {
+            padding-bottom: 6px;
         }
     }
 
