@@ -4,20 +4,16 @@ export default () => {
 
     const els = [
         {
-            img: '/img/hammer/1.webp',
+            img: '/img/hammer.webp',
             title: 'HAMMER'
         },
         {
-            img: '/img/hammer/2.webp',
+            img: '/img/wave.webp',
             title: 'WAVE'
         },
         {
-            img: '/img/hammer/3.webp',
+            img: '/img/aqua.webp',
             title: 'AQUA'
-        },
-        {
-            img: '/img/hammer/4.webp',
-            title: 'HAMMER'
         },
     ]
 

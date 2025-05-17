@@ -7,7 +7,18 @@
     flex-wrap: wrap;
     gap: 20px;
     font-size: 42px;
+    min-width: 200px;
+    @media(max-width: 660px){
+        font-size: 24px;
+        gap: 10px;
+    }
     img{
         width: 100%;
+    }
+    &_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
