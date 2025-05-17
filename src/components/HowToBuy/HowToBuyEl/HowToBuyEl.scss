@@ -17,21 +17,12 @@
                         min-width: 2px !important;
                         min-height: 320px !important;
                         background: radial-gradient(#FFFFFF 0%, #000000 100%);
-                        @media(max-width: 770px){
-                            min-height: 190px;
+                        @media(max-width: 600px){
+                            min-height: 150px !important;
                         }
-                        @media(max-width: 460px){
-                            min-height: 210px;
+                        @media(max-width: 410px){
+                            min-height: 170px !important;
                         }
-                        @media(max-width: 330px){
-                            min-height: 240px;
-                        }
-                        // @media(max-width: 570px){
-                        //     min-height: 340px;
-                        // }
-                        // @media(max-width: 450px){
-                        //     min-height: 370px;
-                        // }
                         &_last{
                             background: radial-gradient(#3A65FF 0%, #000000 100%);
                         }
@@ -59,6 +50,9 @@
         gap: 20px;
         @media(max-width: 770px){
             padding: 50px;
+        }
+        @media(max-width: 600px){
+            padding: 25px;
         }
         &_step{
             width: 100%;
