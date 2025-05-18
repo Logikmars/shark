@@ -4,38 +4,38 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Tokenomics.scss';
 
 export default () => {
-const imagesRef = useRef([]);
+    const imagesRef = useRef([]);
 
-useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-    // Установка начальных значений для каждого элемента
-    imagesRef.current.forEach((el, index) => {
-        const isEven = index % 2 === 0;
+        // Установка начальных значений для каждого элемента
+        imagesRef.current.forEach((el, index) => {
+            const isEven = index % 2 === 0;
 
-        gsap.set(el, {
-            y: isEven ? -100 : 100,
-            opacity: 0,
-            rotate: isEven ? 35 : -35,
+            gsap.set(el, {
+                y: isEven ? -500 : 500,
+                opacity: 0,
+                rotate: isEven ? 60 : -60,
+            });
         });
-    });
 
-    // Анимация для всех
-    gsap.to(imagesRef.current, {
-        y: 0,
-        opacity: 1,
-        rotate: 0,
-        duration: 1,
-        ease: 'power3.out',
-        stagger: 0.1, // Убери для синхронной анимации
-        scrollTrigger: {
-            trigger: '.Tokenomics_content',
-            start: 'top 25%',
-            toggleActions: 'play none none reverse',
-            markers: true, // убери после отладки
-        },
-    });
-}, []);
+        // Анимация для всех
+        gsap.to(imagesRef.current, {
+            y: 0,
+            opacity: 1,
+            rotate: 0,
+            duration: 1,
+            ease: 'power3.out',
+            stagger: 0.1, // Убери для синхронной анимации
+            scrollTrigger: {
+                trigger: '.Tokenomics_content',
+                start: 'top 50%',
+                toggleActions: 'play none none reverse',
+                // markers: true, // убери после отладки
+            },
+        });
+    }, []);
 
 
 

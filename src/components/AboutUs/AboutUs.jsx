@@ -4,11 +4,6 @@ export default () => {
     return (
         <div className='AboutUs'>
             <div className='AboutUs_content'>
-                <div className='AboutUs_content_decor free_img'>
-                    <div className='AboutUs_content_decor_plus free_img'>
-                        <img src="/img/plus.svg" alt="" />
-                    </div>
-                </div>
                 <div className='AboutUs_content_container'>
                     <div className='AboutUs_content_title'>
                         ABOUT US
@@ -36,23 +31,8 @@ export default () => {
                     </div>
                 </div>
             </div>
-            <div className='AboutUs_img'>
-                <img src="/img/shark.webp" alt="" />
-                <div className='AboutUs_img_decor free_img'>
-                    <div className='AboutUs_img_decor_sharkimg1 free_img'>
-                        <img src="/img/decorSharkDog.webp" alt="" />
-                    </div>
-                    {/* <div className='AboutUs_img_decor_sharkimg2 free_img'>
-                        <img src="/img/decorcostume.webp" alt="" />
-                    </div>
-                    <div className='AboutUs_img_decor_sharkimg3 free_img'>
-                        <img src="/img/decorcostume.webp" alt="" />
-                    </div> */}
-
-                    <div className='AboutUs_img_decor_star free_img'>
-                        <img src="/img/plus.svg" alt="" />
-                    </div>
-                </div>
+            <div className='AboutUs_img free_img'>
+                <img src="/img/sharkDecor.webp" alt="" />
             </div>
         </div>
     )

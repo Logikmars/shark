@@ -13,8 +13,8 @@ export default ({ type, decor }) => {
                     })}
             </div>
             <div className='Marquee_decor free_img'>
-                <img src="/img/decor.png" alt="" className='Marquee_decor_img2' />
-                <img src="/img/decor.png" alt="" />
+                <img src="/img/decor.webp" alt="" className='Marquee_decor_img2' />
+                <img src="/img/decor.webp" alt="" />
             </div>
             <div className={`Marquee_inner2 Marquee_inner2_${type}`}>
                 {Array(20)

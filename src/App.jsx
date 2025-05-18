@@ -8,6 +8,16 @@ import Marquee from "./components/Marquee/Marquee"
 import RoadMap from "./components/RoadMap/RoadMap"
 import Tokenomics from "./components/Tokenomics/Tokenomics"
 
+
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { TextPlugin } from "gsap/TextPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   return (
     <div className='App'>

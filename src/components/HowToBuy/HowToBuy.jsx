@@ -29,7 +29,7 @@ export default () => {
             }
             <div className='HowToBuy_decor free_img'>
                 <div className='HowToBuy_decor_text free_img'>
-                    <img src="/img/decorLast.png" alt="" />
+                    <img src="/img/decorLast.webp" alt="" />
                 </div>
             </div>
         </div>

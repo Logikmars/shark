@@ -4,20 +4,33 @@
     // max-width: 1400px;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    // align-items: stretch;
+    align-items: center;
+    height: 700px;
+    position: relative;
+    z-index: -1;
+    left: -300px;
 
-    @media(max-width: 850px) {
+    @media(max-width: 1200px) {
+        left: -100px;
+    }
+
+    @media(max-width: 950px) {
         flex-wrap: wrap;
+        height: auto;
+        left: 0px;
+        padding: 0px 18px;
     }
 
     &_content {
-        width: 50%;
+        // width: 50%;
+        width: 550px;
         display: flex;
-        justify-content: start;
+        // justify-content: start;
         gap: 32px;
         flex-wrap: wrap;
-        align-content: space-between;
-        padding-left: 10%;
+        align-content: center;
+        align-items: center;
 
         @media(max-width: 850px) {
             width: 100%;
@@ -75,6 +88,7 @@
             justify-content: start;
             gap: 32px;
             flex-wrap: wrap;
+            max-width: 600px;
 
             @media(max-width: 850px) {
                 width: 100%;
@@ -85,7 +99,8 @@
                 font-family: 'Fixel';
                 font-weight: 600;
                 font-size: 16px;
-                max-width: 500px;
+                // max-width: 500px;
+                width: 100%;
 
                 @media(max-width: 850px) {
                     width: 100%;
@@ -120,23 +135,29 @@
     }
 
     &_img {
-        width: 50%;
+        // width: 50%;
         display: flex;
-        justify-content: end;
-        flex-wrap: wrap;
+        justify-content: left !important;
+
+        @media(max-width: 950px) {
+            height: 500px !important;
+            width: 100% !important;
+            justify-content: center !important;
+            align-items: start !important;
+        }
 
         img {
-            width: 600px;
+            width: 900px;
+
+            @media(max-width: 950px) {
+                width: 600px;
+            }
+
+            @media(max-width: 550px) {
+                position: relative;
+                left: 100px;
+            }
         }
-
-        @media(max-width: 850px) {
-            width: 100%;
-            position: relative;
-            left: 100px;
-
-            height: 500px;
-        }
-
 
         &_decor {
             width: 100% !important;

@@ -1,4 +1,4 @@
-.HowToBuy{
+.HowToBuy {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6,25 +6,31 @@
     gap: 60px;
     padding-bottom: 50px !important;
     padding-top: 100px !important;
-    @media(max-width: 600px){
+
+    @media(max-width: 600px) {
         gap: 30px;
     }
-    &_decor{
+
+    &_decor {
         width: 100% !important;
         justify-content: end !important;
-        &_text{
+
+        &_text {
             justify-content: end !important;
             left: -10%;
             bottom: 70px;
             z-index: 9999999999;
             rotate: -5deg;
-            img{
+
+            img {
                 width: 300px;
-                @media(max-width: 400px){
+
+                @media(max-width: 400px) {
                     width: 220px;
                 }
             }
-            @media(max-width: 600px){
+
+            @media(max-width: 600px) {
                 bottom: 30px;
             }
         }

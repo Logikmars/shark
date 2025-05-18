@@ -5,8 +5,8 @@ export default () => {
         <div className='HeroSection contaier'>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_decor_blurLeft free_img'>
-                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2' />
-                <img src="/img/decor.png" alt="" />
+                <img src="/img/decor.webp" alt="" className='HeroSection_decor_blurLeft_img2' />
+                <img src="/img/decor.webp" alt="" />
             </div>
             <div className='HeroSection_content'>
                 <div className='HeroSection_content_decor_top free_img'>
@@ -44,8 +44,8 @@ export default () => {
                 </div>
             </div>
             <div className='HeroSection_decor_blurLeft HeroSection_decor_blurLeft_sec free_img'>
-                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 HeroSection_decor_blurLeft_sec_img2 ' />
-                <img src="/img/decor.png" alt="" />
+                <img src="/img/decor.webp" alt="" className='HeroSection_decor_blurLeft_img2 HeroSection_decor_blurLeft_sec_img2 ' />
+                <img src="/img/decor.webp" alt="" />
             </div>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_btn'>
@@ -59,8 +59,8 @@ export default () => {
             </div>
             <div className='HeroSection_decor_topline free_img'></div>
             <div className='HeroSection_decor_blurLeft free_img'>
-                <img src="/img/decor.png" alt="" className='HeroSection_decor_blurLeft_img2 ' />
-                <img src="/img/decor.png" alt="" />
+                <img src="/img/decor.webp" alt="" className='HeroSection_decor_blurLeft_img2 ' />
+                <img src="/img/decor.webp" alt="" />
             </div>
         </div>
     )
