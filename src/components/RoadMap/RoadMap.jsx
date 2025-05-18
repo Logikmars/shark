@@ -8,31 +8,39 @@ export default () => {
 
     const imagesRef = useRef([]);
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-        imagesRef.current.forEach((img, i) => {
-            const offset = 80 - i * 15;
+    const directions = [
+        { x: -100, y: 0 },  // слева
+        { x: 0, y: 100 },   // снизу
+        { x: 0, y: -100 },  // сверху
+        { x: 100, y: 0 },   // справа
+    ];
 
-            gsap.fromTo(
-                img,
-                { y: 50, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.6,
-                    ease: 'power3.out',
-                    scrollTrigger: {
-                        trigger: img,
-                        start: `top ${offset}%`,
-                        end: `bottom top`,
-                        toggleActions: 'play reverse play reverse',
-                        // markers: true,
-                    },
-                }
-            );
-        });
-    }, []);
+    imagesRef.current.forEach((img, i) => {
+        const dir = directions[i % directions.length]; // повторяется после 4
+
+        gsap.fromTo(
+            img,
+            { ...dir, opacity: 0 },
+            {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: img,
+                    start: 'top 80%',
+                    end: 'bottom top',
+                    toggleActions: 'play none none reverse',
+                    // markers: true,
+                },
+            }
+        );
+    });
+}, []);
 
     return (
         <div className='RoadMap container'>
@@ -48,7 +56,7 @@ export default () => {
                         .map((_, index) => (
                             <div className={`RoadMap_el free_img RoadMap_el_${index + 1}`} key={`RoadMap_${index}`}>
                                 <img
-                                    src={`/img/roadmap/${index + 1}.webp`}
+                                    src={`/img/roadmap/${index + 1}.svg`}
                                     alt=""
                                     ref={el => (imagesRef.current[index] = el)}
                                     />
