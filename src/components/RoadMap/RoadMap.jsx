@@ -35,7 +35,7 @@ export default () => {
             stagger: 0.1, // можно убрать или увеличить
             scrollTrigger: {
                 trigger: '.RoadMap_content',
-                start: 'top 20%',
+                start: 'top 50%',
                 toggleActions: 'play none none reverse',
                 // markers: true,
             },
@@ -62,6 +62,7 @@ export default () => {
                                 />
                             </div>
                         ))}
+
                 </div>
                 <div className='RoadMap_content_decor free_img'></div>
             </div>
