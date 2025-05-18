@@ -5,6 +5,7 @@ import Header from "./components/Header/Header"
 import HeroSection from "./components/HeroSection/HeroSection"
 import HowToBuy from "./components/HowToBuy/HowToBuy"
 import Marquee from "./components/Marquee/Marquee"
+import RoadMap from "./components/RoadMap/RoadMap"
 import Tokenomics from "./components/Tokenomics/Tokenomics"
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
       <Marquee type={'ticker'} />
       <Hammer />
       <Tokenomics />
+      <RoadMap />
       <Marquee type={'HTB'} decor />
-      {/* почему когда я ввожу How to buy, то бегущая строка растгивается по высоте, а не в ширину */}
       <HowToBuy />
       <Footer />
     </div>

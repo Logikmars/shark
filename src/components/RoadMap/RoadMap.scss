@@ -1,0 +1,117 @@
+.RoadMap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px !important;
+    
+    &_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 50px;
+        @media(max-width: 950px){
+            height: 500px;
+        }
+        @media(max-width: 640px){
+            height: 100px;
+        }
+        &_decor{
+            width: 100vw !important;
+            min-height: 1px !important;
+            background: radial-gradient(#FFF, #000 70%);
+            justify-content: start !important;
+            &_text{
+                left: 400px;
+                bottom: 50px;
+                img{
+                    width: 200px;
+                }
+                @media(max-width: 1140px){
+                    left: 200px;
+                }
+                @media(max-width: 650px){
+                    bottom: 20px;
+                    img{
+                        width: 100px;
+                    }
+                }
+                @media(max-width: 500px){
+                    left: 100px;
+                }
+                @media(max-width: 350px){
+                    left: 70px;
+                }
+            }
+        }
+    }
+    &_el{
+        &_1{
+            left: -320px;
+        }
+        &_2{
+            left: -90px;
+        }
+        &_3{
+            left: 120px;
+        }
+        &_4{
+            left: 310px;
+        }
+        @media(max-width: 950px){
+            &_1{
+                left: -170px;
+                img{
+                    width: 100px;
+                }
+            }
+            &_2{
+                left: -30px;
+                img{
+                    width: 250px;
+                }
+            }
+            &_3{
+                left: 100px;
+                img{
+                    width: 100px;
+                }
+            }
+            &_4{
+                left: 210px;
+                img{
+                    width: 90px;
+                }
+            }
+        }
+        @media(max-width: 640px){
+            &_1{
+                left: -100px;
+                img{
+                    width: 50px;
+                }
+            }
+            &_2{
+                left: -20px;
+                img{
+                    width: 150px;
+                }
+            }
+            &_3{
+                left: 50px;
+                img{
+                    width: 50px;
+                }
+            }
+            &_4{
+                left: 110px;
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

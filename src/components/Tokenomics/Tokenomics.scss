@@ -13,7 +13,7 @@
         color: #2C5AFF;
         font-size: 200px;
 
-        @media(max-width: 800px) {
+        @media(max-width: 950px) {
             font-size: 100px;
         }
 
@@ -28,6 +28,22 @@
         align-items: center;
         height: 500px;
         width: 100%;
-        // background: #fff2;
+        @media(max-width: 950px){
+            height: 300px;
+            img{
+                width: 600px;
+            }
+        }
+        @media(max-width: 640px){
+            img{
+                width: 400px;
+            }
+        }
+        @media(max-width: 440px){
+            height: 200px;
+            img{
+                width: 300px;
+            }
+        }
     }
 }
