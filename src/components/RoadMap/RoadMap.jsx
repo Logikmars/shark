@@ -70,7 +70,7 @@ export default () => {
             scrollTrigger: {
                 trigger: '.RoadMap_wrapper',
                 scrub: 0,
-                markers: true,
+                // markers: true,
                 pin: '.RoadMap_wrapper',
                 pinSpacing: false,
                 start: 'top 0%',
