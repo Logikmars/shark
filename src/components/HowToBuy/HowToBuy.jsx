@@ -7,21 +7,21 @@ export default () => {
             text: 'SET UP A SOLANA WALLET: ENSURE YOU HAVE A SOLANA-COMPATIBLE WALLET LIKE SOLLET OR PHANTOM.'
         },
         {
-            text: 'ACCESS A DECENTRALIZED EXCHANGE (DEX): VISIT A REPUTABLE SOLANA-BASED DEX LIKE SERUM OR RAYDIUM.'
+            text: 'ACCESS A DECENTRALIZED EXCHANGE (DEX): VISIT A REPUTABLE SOLANA-BASED DEX LIKE JUPITER OR RAYDIUM.'
         },
         {
             text: 'CONNECT YOUR WALLET: CONNECT YOUR SOLANA WALLET TO THE DEX PLATFORM.'
         },
         {
-            text: 'SWAP FOR $JAWS: USE YOUR SOL OR OTHER SUPPORTED TOKENS TO SWAP FOR $JAWS.'
+            text: 'SWAP FOR JAWS: USE YOUR SOL OR OTHER SUPPORTED TOKENS TO SWAP FOR JAWS.'
         },
         {
-            text: 'SECURE YOUR TOKENS: ONCE PURCHASED, TRANSFER YOUR $JAWS TOKENS TO YOUR SECURE SOLANA WALLET.'
+            text: 'SECURE YOUR TOKENS: ONCE PURCHASED, TRANSFER YOUR JAWS TOKENS TO YOUR SECURE SOLANA WALLET.'
         }
     ]
 
     return (
-        <div className='HowToBuy container'>
+        <div className='HowToBuy container' id='htb'>
             {
                 elements.map((el, index) => (
                     <HowToBuyEl text={el.text} index={index + 1} key={`HowToBuyEl_${index}`} />

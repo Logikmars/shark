@@ -1,6 +1,30 @@
 import LinkWithBorder from '../LinkWithBorder/LinkWithBorder';
 import './Footer.scss';
 export default () => {
+
+    const els = [
+        {
+            title: 'About us',
+            id: 'about'
+        },
+        {
+            title: 'Products',
+            id: 'products'
+        },
+        {
+            title: 'Tokenomics',
+            id: 'tokenomics'
+        },
+        {
+            title: 'How to buy',
+            id: 'htb'
+        },
+        {
+            title: 'Socials',
+            id: 'social'
+        }
+    ]
+
     return (
         <div className='Footer'>
             <div className='Footer_wrapper container'>
@@ -42,10 +66,11 @@ export default () => {
                 </div>
                 <div className='Footer_content'>
                     <div className='Footer_content_media'>
-                        <LinkWithBorder title={'Contact us'} />
+                        {/* <LinkWithBorder title={'Contact us'} /> */}
                         <div className='Footer_content_media_el'>
                             <LinkWithBorder img={'/img/tg.svg'} type={'tg'}/>
-                            <LinkWithBorder img={'/img/twitter.svg'} type={'twitter'}/>
+                            <LinkWithBorder img={'/img/twitter.svg'} type={'twitter'} addittional='twitter'/>
+                            <LinkWithBorder img={'/img/dex.svg'} type={'dex'} addittional='dex'/>
                         </div>
                     </div>
                     <div className='Footer_content_title'>
@@ -56,8 +81,8 @@ export default () => {
                     </div>
                     <div className='Footer_content_nav'>
                          {
-                            ['About us', 'Products', 'Tokenimics', 'Roadmap', 'How to buy', 'Socials'].map((el, index) => (
-                                <a href="" key={`HeroSection_content_items_links_${index}`}>{el}</a>
+                            els.map((el, index) => (
+                                <a href={`#${el.id}`} key={`HeroSection_content_items_links_${index}`}>{el.title}</a>
                             ))
                         }
                     </div>

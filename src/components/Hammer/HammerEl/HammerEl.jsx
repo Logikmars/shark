@@ -1,8 +1,8 @@
 import LinkWithBorder from '../../LinkWithBorder/LinkWithBorder';
 import './HammerEl.scss';
-export default ({ title, img }) => {
+export default ({ title, img, onMouseEnter }) => {
     return (
-        <div className='HammerEl'>
+        <div className='HammerEl' onMouseEnter={onMouseEnter}>
             <img src={img} alt="" />
             {title}
             <div className='HammerEl_btn'>

@@ -2,7 +2,7 @@ import LinkWithBorder from '../LinkWithBorder/LinkWithBorder';
 import './AboutUs.scss';
 export default () => {
     return (
-        <div className='AboutUs'>
+        <div className='AboutUs' id='about'>
             <div className='AboutUs_content'>
                 <div className='AboutUs_content_container'>
                     <div className='AboutUs_content_title'>

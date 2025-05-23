@@ -6,6 +6,8 @@ export default ({ title, img, addittional = '', gray, type}) => {
                 window.open('https://t.me/JawsCoinPortal', '_blank');
                 } else if (type === 'twitter') {
                 window.open('https://x.com/JawsSolCoin', '_blank');
+                } else if (type === 'dex'){
+                    window.open('https://dexscreener.com/', '_blank');
                 }
             }}
         >

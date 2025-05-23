@@ -8,7 +8,7 @@
     align-items: center;
     height: 700px;
     position: relative;
-    z-index: -1;
+    z-index: 99999;
     left: -300px;
 
     @media(max-width: 1200px) {
