@@ -44,15 +44,15 @@ export default () => {
                     <div className='Footer_content_media'>
                         <LinkWithBorder title={'Contact us'} />
                         <div className='Footer_content_media_el'>
-                            <LinkWithBorder img={'/img/tg.svg'} />
-                            <LinkWithBorder img={'/img/twitter.svg'} />
+                            <LinkWithBorder img={'/img/tg.svg'} type={'tg'}/>
+                            <LinkWithBorder img={'/img/twitter.svg'} type={'twitter'}/>
                         </div>
                     </div>
                     <div className='Footer_content_title'>
                         Join the Cabal
-                        <div className='Footer_content_title_text'>
+                        {/* <div className='Footer_content_title_text'>
                             Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.
-                        </div>
+                        </div> */}
                     </div>
                     <div className='Footer_content_nav'>
                          {

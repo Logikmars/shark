@@ -35,6 +35,7 @@ export default () => {
                     <div className='Hammer_title_text_content'>
                         HAMMER
                     </div>
+                    <div className='Hammer_title_text_content_text'>Hammer  – Boost Your Chat Engagement!</div>
                     <div className='LinkWithBorder_decor_bottom free_img'>
                         <div className='LinkWithBorder_decor_bottom_left free_img'>
                             <img src="/img/border.svg" alt="" />
@@ -74,8 +75,16 @@ export default () => {
             </div>
 
             <div className='Hammer_description'>
-                <div className='Hammer_description_left'>Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.</div>
-                <div className='Hammer_description_right'>Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.</div>
+                <div className='Hammer_description_left'>Hammer rewards you for doing what you love - chatting, inviting friends, and playing in-house games in Telegram groups. Add the bot to your Telegram group and instantly increase user activity. Hammer is designed to energize your community by encouraging interaction, promoting participation, and keeping conversations alive. Whether it's through smart nudges, gamified challenges, or active presence, Hammer makes sure your community never goes silent.</div>
+                <div className='Hammer_description_right'>
+                    <ul>
+                        <li>✅Stimulates user engagement</li>
+                        <li>✅Keeps the chat lively and active</li>
+                        <li>✅Perfect for communities, teams, and interest groups</li>
+                        <li>✅Easy to set up and fully automated</li>
+                    </ul>
+                    Bring your group to life with Hammer – your ultimate activity booster!
+                </div>
             </div>
         </div>
     )

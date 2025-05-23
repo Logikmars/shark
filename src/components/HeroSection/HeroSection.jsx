@@ -28,7 +28,8 @@ export default () => {
                         WELCOME!
                     </div>
                     <div className='HeroSection_content_items_description'>
-                        Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.
+                        {/* Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis. */}
+                        Meet the Solana's Ocean Greatest Predator - JAWS, the First Chat2Earn TG solution for your favorite memecoins!
                     </div>
                     <div className='HeroSection_content_items_links'>
                         {
