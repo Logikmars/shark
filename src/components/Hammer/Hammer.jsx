@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Hammer.scss';
 import HammerEl from './HammerEl/HammerEl';
 export default () => {
@@ -17,8 +18,10 @@ export default () => {
         },
     ]
 
+    const [showText, setshowText] = useState(false);
+
     return (
-        <div className='Hammer'>
+        <div className='Hammer' id='products'>
             <div className='Hammer_title'>
                 <div className='Hammer_title_decor free_img'>
                     <div className='Hammer_title_decor_lineTop free_img'></div>
@@ -35,6 +38,7 @@ export default () => {
                     <div className='Hammer_title_text_content'>
                         HAMMER
                     </div>
+                    <div className='Hammer_title_text_content_text'>Hammer  – Boost Your Chat Engagement!</div>
                     <div className='LinkWithBorder_decor_bottom free_img'>
                         <div className='LinkWithBorder_decor_bottom_left free_img'>
                             <img src="/img/border.svg" alt="" />
@@ -62,7 +66,7 @@ export default () => {
             <div className='Hammer_content'>
                 {
                     els.map((el, index) => (
-                        <HammerEl title={el.title} img={el.img} key={`HammerEl_${index}`} />
+                        <HammerEl title={el.title} img={el.img} key={`HammerEl_${index}`} onMouseEnter={() => {setshowText(true)}}/>
                     ))
                 }
             </div>
@@ -73,9 +77,17 @@ export default () => {
                 </div>
             </div>
 
-            <div className='Hammer_description'>
-                <div className='Hammer_description_left'>Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.</div>
-                <div className='Hammer_description_right'>Adipisci sunt autem et maxime omnis officiis dolores maiores voluptas. Voluptatem velit id et fugit quo. Eos expedita tempore eius excepturi. Officiis molestias qui esse sit est facere. Minus consequatur dolorum deleniti perspiciatis.</div>
+            <div className={`Hammer_description ${showText && 'Hammer_description_show'}`}>
+                <div className='Hammer_description_left'>Hammer rewards you for what you love – chatting, inviting friends, and playing games in Telegram groups. Add the bot to your group to boost activity. With smart nudges, gamified challenges, and an active presence, Hammer keeps your community engaged and conversations alive.</div>
+                {/* <div className='Hammer_description_right'>
+                    <ul>
+                        <li>✅Stimulates user engagement</li>
+                        <li>✅Keeps the chat lively and active</li>
+                        <li>✅Perfect for communities, teams, and interest groups</li>
+                        <li>✅Easy to set up and fully automated</li>
+                    </ul>
+                    Bring your group to life with Hammer – your ultimate activity booster!
+                </div> */}
             </div>
         </div>
     )
