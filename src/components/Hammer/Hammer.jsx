@@ -66,7 +66,7 @@ export default () => {
             <div className='Hammer_content'>
                 {
                     els.map((el, index) => (
-                        <HammerEl title={el.title} img={el.img} key={`HammerEl_${index}`} onMouseEnter={() => {setshowText(true)}}/>
+                        <HammerEl title={el.title} img={el.img} key={`HammerEl_${index}`} onMouseEnter={() => { index === 0 && setshowText(true) }} onMouseLeave={() => { setshowText(false) }} />
                     ))
                 }
             </div>

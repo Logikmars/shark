@@ -68,9 +68,9 @@ export default () => {
                     <div className='Footer_content_media'>
                         {/* <LinkWithBorder title={'Contact us'} /> */}
                         <div className='Footer_content_media_el'>
-                            <LinkWithBorder img={'/img/tg.svg'} type={'tg'}/>
-                            <LinkWithBorder img={'/img/twitter.svg'} type={'twitter'} addittional='twitter'/>
-                            <LinkWithBorder img={'/img/dex.svg'} type={'dex'} addittional='dex'/>
+                            <LinkWithBorder img={'/img/tg.svg'} type={'tg'} />
+                            <LinkWithBorder img={'/img/twitter.svg'} type={'twitter'} addittional='twitter' />
+                            <LinkWithBorder img={'/img/dex.svg'} type={'dex'} addittional='dex' />
                         </div>
                     </div>
                     <div className='Footer_content_title'>
@@ -80,14 +80,14 @@ export default () => {
                         </div> */}
                     </div>
                     <div className='Footer_content_nav'>
-                         {
+                        {
                             els.map((el, index) => (
                                 <a href={`#${el.id}`} key={`HeroSection_content_items_links_${index}`}>{el.title}</a>
                             ))
                         }
                     </div>
                     <div className='Footer_content_copy'>
-                        Copyright 2024, Escape Labs
+                        Copyright 2025, Escape Labs
                     </div>
                 </div>
                 <div className='Footer_decor free_img'>
