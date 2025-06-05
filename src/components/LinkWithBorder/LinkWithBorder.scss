@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    font-weight: 900;
+    // font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
     flex-wrap: wrap;
@@ -15,9 +15,10 @@
     transition: scale 300ms;
     will-change: scale; //!!!важно
 
-    &_gray{
+    &_gray {
         opacity: 0.5;
     }
+
     &:hover {
         scale: 1.1;
 
@@ -29,9 +30,11 @@
     &_decor_top {
         width: 100% !important;
         justify-content: space-between !important;
-        img{
+
+        img {
             width: 7px;
         }
+
         &_right {
             img {
                 rotate: 90deg;
@@ -49,6 +52,7 @@
         gap: 10px;
         font-family: 'Modak';
         font-size: 16px;
+
         &_text {
             padding: 9px 18px;
         }
@@ -60,11 +64,13 @@
         &_SCROLL {
             padding-bottom: 6px;
         }
-        &_twitter{
+
+        &_twitter {
             filter: invert(1) !important;
             width: 32px;
         }
-        &_dex{
+
+        &_dex {
             width: 32px;
         }
     }

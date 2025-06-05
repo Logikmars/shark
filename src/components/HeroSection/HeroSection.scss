@@ -122,7 +122,7 @@
                 font-size: 200px;
                 color: #2C5AFF;
                 font-family: 'Modak';
-                font-weight: 900;
+                // font-weight: 900;
 
                 @media(max-width: 1401px) {
                     font-size: 120px;
@@ -170,11 +170,12 @@
 
                 a {
                     text-transform: uppercase;
-                    font-weight: 900;
+                    // font-weight: 900;
                     font-size: 24px;
                     transition: color 300ms;
                     font-family: 'Modak';
                     letter-spacing: .5px;
+
                     &:hover {
                         color: #2C5AFF;
                     }
